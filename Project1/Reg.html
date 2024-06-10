@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <center>
+        <h1>Registration Form</h1>
+        <form action="Login.html">
+        <form name="myform"  method="post" action="Loginsuccess.html" onsubmit="return validateemail();">
+        First Name: <input type="text" name="fname"><br>
+        Last Name: <input type="text" name="lname"><br>
+        Gender:  <input type="radio" name="Gender" value="Male">Male<br>
+        <input type="radio" name="Gender" value="Female">Female<br>
+        <input type="radio" name="Gender" value="Others">Other<br>
+        Mobile Number: <input type="tel"  name="personal" id="per1" pattern="[0-9]{10}"><br>
+        Email: <input type="email" name="office" id ="office"><br>
+        Address: <textarea name="atext"  cols="35" row="45"></textarea><br>
+        Date Of Birth: <input type="date" name="birthday"><br>
+        City: <select name="city">
+            <option value="Select">---Select---</option>
+            <option value="Ongole">Ongole</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Banglore">Banglore</option> 
+            <option value="Chennai">Chennai</option>
+        </select><br>
+        State: <select name="state">
+            <option value="Select">---Select---</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Telengana">Telengana</option>
+            <option value="Karnataka">Karnataka</option> 
+            <option value="Tamil Nadu">Tamil Nadu</option>
+         </select><br>
+        Pin Code:<textarea name="ptext"  cols="5" row="2"></textarea><br>
+        <input type="submit">
+        </form>
+        </form>
+    </center>
+    </body>
+</html>
